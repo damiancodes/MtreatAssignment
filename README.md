@@ -34,12 +34,10 @@ A modern, full-stack healthcare platform built with Django REST Framework (DRF),
 
 ---
 
-## (Optional) Backend/API Endpoints
-If you wish to showcase your backend endpoints (e.g., Django admin, API docs, or a sample endpoint response), add a screenshot to the `images/` folder (e.g., `api-docs.png`) and reference it here:
+## Backend/API Endpoints just 1...
 
-```markdown
-![API Docs](./images/api-docs.png)
-```
+### Apisevices
+![apisevices](https://github.com/damiancodes/MtreatAssignment/blob/master/images/apiservices.png)
 
 ---
 
