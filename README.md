@@ -110,5 +110,4 @@ If you wish to showcase your backend endpoints (e.g., Django admin, API docs, or
 
 ---
 
-## Contact
-For any questions or support, please contact [your-email@example.com]. 
+
