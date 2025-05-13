@@ -18,19 +18,19 @@ A modern, full-stack healthcare platform built with Django REST Framework (DRF),
 ## Screenshots
 
 ### Landing Page
-![Landing Page](images/landing.png)
+![Landing Page](./images/landing.png)
 
 ### Services Page
-![Services Page](images/services.png)
+![Services Page](./images/services.png)
 
 ### Patient Registration
-![Patient Registration](images/patientregister.png)
+![Patient Registration](./images/patientregister.png)
 
 ### Login
-![Login](images/login.png)
+![Login](./images/login.png)
 
 ### Register
-![Register](images/register.png)
+![Register](./images/register.png)
 
 ---
 
@@ -38,7 +38,7 @@ A modern, full-stack healthcare platform built with Django REST Framework (DRF),
 If you wish to showcase your backend endpoints (e.g., Django admin, API docs, or a sample endpoint response), add a screenshot to the `images/` folder (e.g., `api-docs.png`) and reference it here:
 
 ```markdown
-![API Docs](images/apiservices.png)
+![API Docs](./images/api-docs.png)
 ```
 
 ---
