@@ -134,11 +134,3 @@ A full-stack healthcare platform built with Django REST Framework (DRF), Postgre
 
 ---
 
-## Submission
-- Push your code to GitHub and share the repository link.
-- Include this README and ensure all instructions work from a clean setup.
-- For any issues, contact: pascal@m-treat.com
-
----
-
-**Good luck!** 
