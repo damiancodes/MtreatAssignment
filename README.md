@@ -39,7 +39,7 @@ A modern, full-stack healthcare platform built with Django REST Framework (DRF),
 ```markdown
 
 ### Apisevices
-![apisevices](images/apiservices.png)
+![apisevices](https://github.com/damiancodes/MtreatAssignment/blob/master/images/apiservices.png)
 
 ```
 
