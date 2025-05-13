@@ -4,13 +4,56 @@ A modern, full-stack healthcare platform built with Django REST Framework (DRF),
 
 ---
 
-## Features
+## Requirements
+
+- **Python:** 3.10+
+- **Node.js:** 18+
+- **npm:** 9+
+- **PostgreSQL:** 13+ (or any recent version)
+- **Git:** for cloning the repository
+- **DBeaver** or **pgAdmin** (optional, for database inspection)
+
+### Backend Python Dependencies (from `requirements.txt`)
+- Django==5.2.1
+- djangorestframework==3.16.0
+- django-cors-headers==4.7.0
+- psycopg2-binary==2.9.10
+- python-dotenv==1.1.0
+- djangorestframework-simplejwt==5.5.0
+
+### Frontend Node.js Dependencies (from `package.json`)
+- @mui/material, @mui/icons-material, @emotion/react, @emotion/styled
+- react, react-dom, react-router-dom, react-hook-form, axios, @tanstack/react-query
+- vite, typescript, eslint, tailwindcss, testing-library (for dev/build)
+
+---
+
+## Setup Checklist
+
+- [ ] Install Python 3.10+ and PostgreSQL
+- [ ] Install Node.js 18+ and npm 9+
+- [ ] Clone this repository
+- [ ] Set up PostgreSQL with the credentials provided below
+- [ ] (Optional) Install DBeaver or pgAdmin for database inspection
+- [ ] Create and activate a Python virtual environment
+- [ ] Install backend dependencies: `pip install -r requirements.txt`
+- [ ] Install frontend dependencies: `cd healthcare-frontend-vite && npm install`
+- [ ] Run migrations and create a superuser
+- [ ] Start backend and frontend servers
+- [ ] (Optional) Run tests
+
+---
+
+## Features & Assignment Achievements
 - Custom user model with extended fields
-- Secure authentication and registration
+- Secure authentication and registration (JWT)
 - Public and protected API endpoints
+- PostgreSQL integration
 - Responsive, modern UI with Material-UI
 - Dark mode support
 - Animated, interactive landing page
+- RESTful API with OpenAPI schema
+- Bonus: Animated cards, screenshots, and more!
 - Comprehensive documentation
 
 ---
@@ -18,26 +61,63 @@ A modern, full-stack healthcare platform built with Django REST Framework (DRF),
 ## Screenshots
 
 ### Landing Page
-![Landing Page](./images/landing.png)
+![Landing Page](images/landing.png)
 
 ### Services Page
-![Services Page](./images/services.png)
+![Services Page](images/services.png)
 
 ### Patient Registration
-![Patient Registration](./images/patientregister.png)
+![Patient Registration](images/patientregister.png)
 
 ### Login
-![Login](./images/login.png)
+![Login](images/login.png)
 
 ### Register
-![Register](./images/register.png)
+![Register](images/register.png)
 
 ---
 
-## Backend/API Endpoints just 1...
+## Backend/API Endpoints Example
 
-### Apisevices
+### Apiservices
 ![apisevices](https://github.com/damiancodes/MtreatAssignment/blob/master/images/apiservices.png)
+
+---
+
+## (Optional) Backend/API Endpoints
+If you wish to showcase your backend endpoints (e.g., Django admin, API docs, or a sample endpoint response), add a screenshot to the `images/` folder (e.g., `api-docs.png`) and reference it here:
+
+```markdown
+![API Docs](./images/api-docs.png)
+```
+
+---
+
+## Demo Credentials
+
+### Django Admin
+- URL: http://localhost:8000/admin/
+- Username: damian@gmail.com
+- Password: pascal123
+
+
+
+### PostgreSQL Database (DBeaver)
+- Host: localhost
+- Port: 5432
+- Database: healthcare-db
+- Username: postgres
+- Password: mtreat123
+
+---
+
+## API Endpoints
+- `POST /api/auth/login/` — Login
+- `POST /api/auth/register/` — Register
+- `GET /api/services/` — List all services
+- `POST /api/patients/` — Register a new patient
+- `GET /api/users/me/` — Get current user profile (auth required)
+- `GET /api/docs/` — API documentation (Swagger/OpenAPI)
 
 ---
 
