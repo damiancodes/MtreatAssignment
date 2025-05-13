@@ -1,8 +1,10 @@
 from rest_framework import serializers
-from django.contrib.auth.models import User
+from django.contrib.auth import get_user_model
 from .models import Patient, Appointment
 from services.models import Service
 from services.serializers import ServiceSerializer
+
+User = get_user_model()
 
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
@@ -29,14 +31,16 @@ class PatientSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Patient
-        fields = ('id', 'user', 'full_name', 'email', 'password', 'phone_number', 'address', 'appointments', 'created_at', 'updated_at')
+        fields = ('id', 'user', 'full_name', 'email', 'password', 'phone', 'address', 'appointments', 'created_at', 'updated_at')
         read_only_fields = ('created_at', 'updated_at')
 
     def create(self, validated_data):
         password = validated_data.pop('password')
+        email = validated_data['email']
+        if User.objects.filter(email=email).exists():
+            raise serializers.ValidationError({'email': 'This email is already registered.'})
         user = User.objects.create_user(
-            username=validated_data['email'],
-            email=validated_data['email'],
+            email=email,
             password=password
         )
         patient = Patient.objects.create(user=user, **validated_data)

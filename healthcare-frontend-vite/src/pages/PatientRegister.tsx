@@ -23,7 +23,13 @@ export default function PatientRegister() {
       setShowSuccess(true);
       reset();
     } catch (error: any) {
-      setApiError(error.response?.data?.email?.[0] || error.response?.data?.non_field_errors?.[0] || error.message || 'Registration failed');
+      const data = error.response?.data;
+      if (data) {
+        const messages = Object.values(data).flat().join(' ');
+        setApiError(messages);
+      } else {
+        setApiError(error.message || 'Registration failed');
+      }
     }
   };
 

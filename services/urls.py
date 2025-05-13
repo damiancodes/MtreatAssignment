@@ -1,10 +1,6 @@
-from django.urls import path, include
-from rest_framework.routers import DefaultRouter
-from .views import ServiceViewSet
-
-router = DefaultRouter()
-router.register(r'', ServiceViewSet)
+from django.urls import path
+from .views import TestPublicView
 
 urlpatterns = [
-    path('', include(router.urls)),
+    path('', TestPublicView.as_view(), name='test-public'),
 ] 

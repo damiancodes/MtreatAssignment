@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { Routes, Route, Navigate } from 'react-router-dom';
 import Container from '@mui/material/Container';
 import Login from './pages/Login';
 import Register from './pages/Register';
@@ -38,21 +38,19 @@ function App() {
     <AuthProvider>
       <ThemeProvider theme={theme}>
         <CssBaseline />
-        <Router>
-          <Navbar onToggleTheme={toggleTheme} mode={mode} />
-          <Container maxWidth="md" sx={{ mt: 8 }}>
-            <Routes>
-              <Route path="/" element={<Landing />} />
-              <Route path="/patient-register" element={<PatientRegister />} />
-              <Route path="/services" element={<Services />} />
-              <Route path="/login" element={<Login />} />
-              <Route path="/register" element={<Register />} />
-              <Route path="/dashboard" element={<PrivateRoute><Dashboard /></PrivateRoute>} />
-              <Route path="/profile" element={<PrivateRoute><Profile /></PrivateRoute>} />
-              <Route path="*" element={<Navigate to="/" replace />} />
-            </Routes>
-          </Container>
-        </Router>
+        <Navbar onToggleTheme={toggleTheme} mode={mode} />
+        <Container maxWidth="md" sx={{ mt: 8 }}>
+          <Routes>
+            <Route path="/" element={<Landing />} />
+            <Route path="/patient-register" element={<PatientRegister />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/register" element={<Register />} />
+            <Route path="/dashboard" element={<PrivateRoute><Dashboard /></PrivateRoute>} />
+            <Route path="/profile" element={<PrivateRoute><Profile /></PrivateRoute>} />
+            <Route path="*" element={<Navigate to="/" replace />} />
+          </Routes>
+        </Container>
       </ThemeProvider>
     </AuthProvider>
   );
