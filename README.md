@@ -2,6 +2,7 @@
 
 A modern, full-stack healthcare platform built with Django REST Framework (DRF), PostgreSQL, and a React (TypeScript, Material-UI) frontend.
 
+
 ---
 
 ## Requirements
@@ -79,11 +80,7 @@ A modern, full-stack healthcare platform built with Django REST Framework (DRF),
 
 <<<<<<< HEAD
 ## Backend/API Endpoints Example
-=======
-## Backend/API Endpoints just 1 screenshot the others are there too...
->>>>>>> 333184cef90d8ec4313d81e5ebbd72853d0472b0
-
-###  Backened Apiservices
+### Apiservices
 ![apisevices](https://github.com/damiancodes/MtreatAssignment/blob/master/images/apiservices.png)
 
 ---
