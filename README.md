@@ -38,7 +38,9 @@ A modern, full-stack healthcare platform built with Django REST Framework (DRF),
 If you wish to showcase your backend endpoints (e.g., Django admin, API docs, or a sample endpoint response), add a screenshot to the `images/` folder (e.g., `api-docs.png`) and reference it here:
 
 ```markdown
-![API Docs](images/apiservices.png)
+##apisevervices
+![apisevices](images/apiservices.png)
+
 ```
 
 ---
