@@ -31,31 +31,31 @@ A modern, full-stack healthcare platform built with Django REST Framework (DRF),
 
 ## Setup Checklist
 
-- [ ] Install Python 3.10+ and PostgreSQL
-- [ ] Install Node.js 18+ and npm 9+
-- [ ] Clone this repository
-- [ ] Set up PostgreSQL with the credentials provided below
-- [ ] (Optional) Install DBeaver or pgAdmin for database inspection
-- [ ] Create and activate a Python virtual environment
-- [ ] Install backend dependencies: `pip install -r requirements.txt`
-- [ ] Install frontend dependencies: `cd healthcare-frontend-vite && npm install`
-- [ ] Run migrations and create a superuser
-- [ ] Start backend and frontend servers
-- [ ] (Optional) Run tests
+-  Install Python 3.10+ and PostgreSQL
+-  Install Node.js 18+ and npm 9+
+-  Clone this repository
+   Set up PostgreSQL with the credentials provided below
+-  (Optional) Install DBeaver or pgAdmin for database inspection
+-  Create and activate a Python virtual environment
+-  Install backend dependencies: `pip install -r requirements.txt`
+-  Install frontend dependencies: `cd healthcare-frontend-vite && npm install`
+-  Run migrations and create a superuser
+  Start backend and frontend servers
+  (Optional) Run tests
 
 ---
 
 ## Features & Assignment Achievements
-- Custom user model with extended fields
-- Secure authentication and registration (JWT)
-- Public and protected API endpoints
-- PostgreSQL integration
-- Responsive, modern UI with Material-UI
-- Dark mode support
-- Animated, interactive landing page
-- RESTful API with OpenAPI schema
-- Bonus: Animated cards, screenshots, and more!
-- Comprehensive documentation
+ Custom user model with extended fields
+ Secure authentication and registration (JWT)
+ Public and protected API endpoints
+ PostgreSQL integration
+ Responsive, modern UI with Material-UI
+ Dark mode support
+ Animated, interactive landing page
+ RESTful API with OpenAPI schema
+ Bonus: Animated cards, screenshots, and more!
+ Comprehensive documentation
 
 ---
 
